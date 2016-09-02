@@ -106,7 +106,7 @@ L1:	popl	%eax
 __dyld_func_lookup:
 	call	L2
 L2:	popl	%eax
-	movl    dyld_func_lookup_pointer-L1(%eax),%eax
+	movl    dyld_func_lookup_pointer-L2(%eax),%eax
 	jmpl    %eax
 
 	.data
